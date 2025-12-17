@@ -39,11 +39,23 @@ document.addEventListener("DOMContentLoaded", function () {
       "terminal-p1":
         "Cheonan Express Bus Terminal is a major transfer hub and one of the city’s busiest commercial districts, with a mall, cinema, and cafés all connected. It is often the very first place visitors see, so it feels like a gateway into Cheonan.",
       "terminal-food-1":
-        "<strong>Yangpohang Cheonan Sinbudong</strong> – A popular seafood restaurant near the terminal and department store, especially when you want sashimi.",
+        `<a href='#' class='map-name' data-map-query='Yangpohang Cheonan Sinbudong'><strong>Yangpohang Cheonan Sinbudong</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Yangpohang Cheonan Sinbudong'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Yangpohang Cheonan Sinbudong'>Kakao</a>` +
+        ` </span> – A popular seafood spot near the terminal and department store, especially for sashimi.`,
       "terminal-food-2":
-        "<strong>Mount Fishtail</strong> – A unique spot where you can enjoy Indian and Nepalese-style curry and tandoori dishes.",
+        `<a href='#' class='map-name' data-map-query='Mount Fishtail Cheonan'><strong>Mount Fishtail</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Mount Fishtail Cheonan'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Mount Fishtail Cheonan'>Kakao</a>` +
+        ` </span> – A unique place for Indian & Nepalese-style curry and tandoori dishes.`,
       "terminal-food-3":
-        "<strong>Little Greece</strong> – A cozy dinner place known for salads and Greek-inspired dishes.",
+        `<a href='#' class='map-name' data-map-query='Little Greece Cheonan'><strong>Little Greece</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Little Greece Cheonan'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Little Greece Cheonan'>Kakao</a>` +
+        ` </span> – A cozy dinner place known for salads and Greek-inspired dishes.`,
       "terminal-parking":
         "You can use both the terminal building parking lot and the Shinsegae Department Store parking. If you combine your trip with shopping, you can get discounted parking, making it convenient to do shopping, dining, and bus travel all at once.",
       "terminal-transit":
@@ -53,11 +65,23 @@ document.addEventListener("DOMContentLoaded", function () {
       "samgori-p1":
         "Samgori Park is famous for the Cheonan Samgeori Heungtaryeong Festival. It has a large lawn square, walking paths, and an outdoor stage, so seasonal festivals and performances are held here throughout the year.",
       "samgori-food-1":
-        "<strong>Restaurants around Samgori Rest Area</strong> – A cluster of places serving gukbap, set menus, and snacks, perfect for a short drive-and-eat course.",
+        `<a href='#' class='map-name' data-map-query='Samgori Rest Area restaurants Cheonan'><strong>Restaurants around Samgori Rest Area</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Samgori Rest Area restaurants Cheonan'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Samgori Rest Area restaurants Cheonan'>Kakao</a>` +
+        ` </span> – A cluster of places serving gukbap, set menus, and snacks—perfect for a short drive-and-eat course.`,
       "samgori-food-2":
-        "<strong>Salad Days (Samgori Rest Area branch)</strong> – A salad-focused spot that’s great when you want a light meal.",
+        `<a href='#' class='map-name' data-map-query='Salad Days Samgori Rest Area'><strong>Salad Days (Samgori Rest Area branch)</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Salad Days Samgori Rest Area'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Salad Days Samgori Rest Area'>Kakao</a>` +
+        ` </span> – A salad-focused spot that’s great when you want a light meal.`,
       "samgori-food-3":
-        "<strong>Local Korean eateries nearby</strong> – Small Korean restaurants scattered along the outer roads make it easy to grab a simple meal after a walk.",
+        `<a href='#' class='map-name' data-map-query='Samgori Park Cheonan Korean food'><strong>Local Korean eateries nearby</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Samgori Park Cheonan Korean food'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Samgori Park Cheonan Korean food'>Kakao</a>` +
+        ` </span> – Small Korean restaurants nearby make it easy to grab a simple meal after a walk.`,
       "samgori-parking":
         "You can use public parking lots around the park and the parking lot in front of the event area. During festival periods, temporary parking and shuttle buses often operate, so it’s best to check the event information page before visiting.",
       "samgori-transit":
@@ -67,11 +91,23 @@ document.addEventListener("DOMContentLoaded", function () {
       "independence-p1":
         "Independence Hall of Korea is a large history museum that focuses on the independence movement during the Japanese occupation. Multiple exhibition halls, a vast outdoor plaza, and walking trails make it a place where you can easily spend an entire day.",
       "independence-food-1":
-        "<strong>Byeongcheon Sundae Alley</strong> – About a 10-minute drive away, this alley near Aunae Market is lined with famous blood-sausage soup restaurants, perfect for combining history and food in one course.",
+        `<a href='#' class='map-name' data-map-query='Byeongcheon Sundae Alley'><strong>Byeongcheon Sundae Alley</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Byeongcheon Sundae Alley'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Byeongcheon Sundae Alley'>Kakao</a>` +
+        ` </span> – About a 10-minute drive away, this alley near Aunae Market is lined with famous blood-sausage soup restaurants—perfect for combining history and food in one course.`,
       "independence-food-2":
-        "<strong>Happy Sushi Restaurant</strong> – A clean and casual sushi and Japanese restaurant nearby.",
+        `<a href='#' class='map-name' data-map-query='Dak Sambaekjip'><strong>Dak Sambaekjip</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Dak Sambaekjip'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Dak Sambaekjip'>Kakao</a>` +
+        ` </span> – A hearty chicken specialty place—often enjoyed as a course of chicken, noodles, and porridge.`,
       "independence-food-3":
-        "<strong>Nearby snack bars and Korean diners</strong> – Around the parking area you’ll find simple places where you can grab a quick bite.",
+        `<a href='#' class='map-name' data-map-query='Independence Hall Cheonan snack Korean food'><strong>Nearby snack bars and Korean diners</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Independence Hall Cheonan snack Korean food'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Independence Hall Cheonan snack Korean food'>Kakao</a>` +
+        ` </span> – Simple places around the parking area where you can grab a quick bite.`,
       "independence-parking":
         "The large parking lots are well-equipped, and the fees are relatively low for long stays. On weekends and holidays it gets crowded with out-of-town visitors, so arriving a bit early is recommended.",
       "independence-transit":
@@ -81,11 +117,23 @@ document.addEventListener("DOMContentLoaded", function () {
       "aunae-p1":
         "Aunae Market is a traditional market where a major March 1st Independence Movement demonstration once took place, and even today a five-day market is held. Right next to it is the Ryu Gwansun Historic Site, so you can combine history learning, market strolling, and Byeongcheon sundae in one course.",
       "aunae-food-1":
-        "<strong>Parksunja Aunae Sundae</strong> – A nationally famous Byeongcheon blood-sausage restaurant where you can enjoy sundae soup and assorted platters.",
+        `<a href='#' class='map-name' data-map-query='Parksunja Aunae Sundae'><strong>Parksunja Aunae Sundae</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Parksunja Aunae Sundae'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Parksunja Aunae Sundae'>Kakao</a>` +
+        ` </span> – A nationally famous Byeongcheon blood-sausage restaurant for sundae soup and assorted platters.`,
       "aunae-food-2":
-        "<strong>Chungnam House</strong> – A long-running, old-school sundae specialty restaurant.",
+        `<a href='#' class='map-name' data-map-query='Chungnamjip Byeongcheon'><strong>Chungnam House</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Chungnamjip Byeongcheon'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Chungnamjip Byeongcheon'>Kakao</a>` +
+        ` </span> – A long-running, old-school sundae specialty restaurant.`,
       "aunae-food-3":
-        "<strong>Other sundae alley restaurants</strong> – The entire alley is lined with sundae places, so choosing where to eat is part of the fun.",
+        `<a href='#' class='map-name' data-map-query='Byeongcheon Sundae Alley'><strong>Other sundae alley restaurants</strong></a>` +
+        ` <span class='map-choice'>` +
+        ` <a href='#' class='map-btn naver' data-map-provider='naver' data-map-query='Byeongcheon Sundae Alley'>Naver</a>` +
+        ` <a href='#' class='map-btn kakao' data-map-provider='kakao' data-map-query='Byeongcheon Sundae Alley'>Kakao</a>` +
+        ` </span> – The entire alley is lined with sundae places, so choosing where to eat is part of the fun.`,
       "aunae-parking":
         "You can use public parking lots around the market and spaces near the Byeongcheon sundae alley. It can get quite crowded on market days, so planning your route together with a visit to Independence Hall makes it more convenient.",
       "aunae-transit":
@@ -225,4 +273,34 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   revealEls.forEach((el) => observer.observe(el));
+
+  // ========================================
+  // 3. 지도 이동은 아이콘(.map-btn) 클릭으로만 동작
+  //    - 이름(.map-name) 클릭은 기본 동작만 막고 아무 것도 하지 않음
+  // ========================================
+  const mapUrl = {
+    naver: (q) => `https://map.naver.com/v5/search/${encodeURIComponent(q)}`,
+    kakao: (q) => `https://map.kakao.com/?q=${encodeURIComponent(q)}`,
+  };
+
+  document.addEventListener("click", (e) => {
+    // ✅ 이름 클릭은 '아무 동작 없음' (href="#" 점프 방지)
+    const nameLink = e.target.closest(".map-name");
+    if (nameLink) {
+      e.preventDefault();
+      return;
+    }
+
+    // ✅ 아이콘 버튼만 외부 지도 열기
+    const btn = e.target.closest(".map-btn");
+    if (!btn) return;
+
+    const query = btn.getAttribute("data-map-query");
+    const provider = btn.getAttribute("data-map-provider");
+    if (!query || !mapUrl[provider]) return;
+
+    e.preventDefault();
+    window.open(mapUrl[provider](query), "_blank", "noopener,noreferrer");
+  });
+
 });
