@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function () {
       "hero-map-caption":
         "The relative locations of the four places in this project are marked on a 3D-style map.",
 
+      "hero-map-hint": "Click a pin to jump to that place",
+
       "terminal-tag": "01 · Gateway to Cheonan",
       "terminal-title": "Cheonan Express Bus Terminal",
 
@@ -213,10 +215,83 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   // 히어로 지도 핀 -> 해당 섹션으로 스크롤
-  document.querySelectorAll(".hero-pin").forEach((pin) => {
+  const heroPins = Array.from(document.querySelectorAll(".hero-pin"));
+
+  // ----------------------------------------
+  // (가이드) 첫 화면에서 핀이 '클릭 가능'하다는 것을 보여주기
+  //  - 터미널 → 삼거리 → 독립기념관 → 아우내 순서로 2회만 살짝 튐
+  //  - 사용자가 스크롤하거나 핀을 클릭하면 자동 중단
+  // ----------------------------------------
+  const stopPinGuide = (() => {
+    let stopped = false;
+    let timers = [];
+
+    function clearAll() {
+      timers.forEach((id) => window.clearTimeout(id));
+      timers = [];
+      heroPins.forEach((p) => p.classList.remove("pin-guide"));
+    }
+
+    function stop() {
+      if (stopped) return;
+      stopped = true;
+      clearAll();
+    }
+
+    function start() {
+      if (!heroPins.length) return;
+
+      // 이미 상호작용이 있었다면 가이드 시작하지 않음
+      if (stopped) return;
+
+      const order = [
+        ".pin-terminal",
+        ".pin-samgori",
+        ".pin-independence",
+        ".pin-aunae",
+      ];
+
+      const orderedPins = order
+        .map((sel) => document.querySelector(`.hero-pin${sel}`))
+        .filter(Boolean);
+
+      const cycles = 2; // 2회만
+      const gap = 650; // 핀 간 간격(ms)
+      const firstDelay = 280;
+
+      for (let c = 0; c < cycles; c++) {
+        orderedPins.forEach((pin, i) => {
+          const t = firstDelay + (c * orderedPins.length + i) * gap;
+          const id = window.setTimeout(() => {
+            if (stopped) return;
+            pin.classList.add("pin-guide");
+            const removeId = window.setTimeout(() => {
+              pin.classList.remove("pin-guide");
+            }, 650);
+            timers.push(removeId);
+          }, t);
+          timers.push(id);
+        });
+      }
+    }
+
+    // 유저 상호작용 시 중단 (방해 최소화)
+    window.addEventListener("scroll", stop, { passive: true, once: true });
+    heroPins.forEach((p) => p.addEventListener("click", stop, { once: true }));
+
+    // DOM 로드 직후 시작
+    start();
+
+    return stop;
+  })();
+
+  // 핀 클릭: 가이드 중단 + 해당 섹션으로 스크롤
+  heroPins.forEach((pin) => {
     pin.addEventListener("click", () => {
+      stopPinGuide();
+
       const target = pin.getAttribute("data-target");
-      const el = document.querySelector(target);
+      const el = target ? document.querySelector(target) : null;
       if (el) {
         el.scrollIntoView({ behavior: "smooth", block: "start" });
       }
